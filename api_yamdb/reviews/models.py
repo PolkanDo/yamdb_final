@@ -55,12 +55,12 @@ class User(AbstractUser):
 
     @property
     def is_admin(self):
-        if self.role == 'admin' or self.is_superuser:
+        if self.role == 'admin' or self.is_superuser is not None:
             return True
 
     @property
     def is_moderator(self):
-        if self.role == 'moderator' or self.is_superuser:
+        if self.role == 'moderator' or self.is_superuser is not None:
             return True
 
     class Meta:
