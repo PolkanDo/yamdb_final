@@ -57,11 +57,15 @@ class User(AbstractUser):
     def is_admin(self):
         if self.role == 'admin' or self.is_superuser:
             return True
+        else:
+            return False
 
     @property
     def is_moderator(self):
         if self.role == 'moderator' or self.is_superuser:
             return True
+        else:
+            return False
 
     class Meta:
         verbose_name = 'Пользователь'
