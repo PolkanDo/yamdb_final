@@ -1,7 +1,7 @@
 from api.views import (CategoriesDelete, CategoryViewSet, CommentViewSet,
                        GenreDelete, GenreViewSet, ReviewViewSet, SignUpView,
-                       TokenView, TitleViewSet, UserViewSet)
-from django.urls import path, include
+                       TitleViewSet, TokenView, UserViewSet)
+from django.urls import include, path
 from rest_framework.routers import SimpleRouter
 
 router = SimpleRouter()
