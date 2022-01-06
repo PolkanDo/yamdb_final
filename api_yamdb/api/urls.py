@@ -1,6 +1,6 @@
-from api.views import CategoriesDelete, CategoryViewSet, CommentViewSet, \
-    GenreDelete, GenreViewSet, ReviewViewSet, SignUpView, TokenView, \
-    TitleViewSet, UserViewSet
+from api.views import (CategoriesDelete, CategoryViewSet, CommentViewSet,
+                       GenreDelete, GenreViewSet, ReviewViewSet, SignUpView,
+                       TokenView, TitleViewSet, UserViewSet)
 from django.urls import path, include
 from rest_framework.routers import SimpleRouter
 
