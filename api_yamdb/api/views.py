@@ -150,8 +150,8 @@ class ReviewViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = Review.objects.all()
         title_id = self.kwargs.get('title_id')
-        queryset = queryset.filter(title_id=title_id)
-        return queryset
+        return queryset.filter(title_id=title_id)
+
     serializer_class = ReviewSerializer
     permission_classes = (IsAdminModeratorAuthorOrReadOnly,)
     pagination_class = PageNumberPagination
