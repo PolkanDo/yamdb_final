@@ -171,8 +171,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = Comment.objects.all()
         review_id = self.kwargs.get('review_id')
-        queryset = queryset.filter(review_id=review_id)
-        return queryset
+        return queryset.filter(review_id=review_id)
     serializer_class = CommentSerializer
     permission_classes = (IsAdminModeratorAuthorOrReadOnly,)
     pagination_class = PageNumberPagination
