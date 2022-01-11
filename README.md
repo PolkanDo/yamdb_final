@@ -65,4 +65,4 @@ Superuser created successfully.
 ```
 
 ## Сервис доступен по ссылке: 
-http://51.250.7.198/admin
+http://51.250.7.198:5000/admin/login
