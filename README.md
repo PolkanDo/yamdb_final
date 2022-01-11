@@ -1,8 +1,11 @@
 # yamdb_final 
-![YaMDB-app workflow](https://github.com/PolkanDo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=feature-1)
+![YaMDB-app workflow](https://github.com/PolkanDo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Описание
 Учебный проект для Я.Практикума
+
+### Автор
+Павел Палютин
 
 ### Технологии
 Python 3.7  
