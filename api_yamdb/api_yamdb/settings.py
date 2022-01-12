@@ -8,7 +8,7 @@ NAME = os.getenv('DB_NAME', default='postgres')
 USER = os.getenv('POSTGRES_USER', default='postgres')
 PASSWORD = os.getenv('POSTGRES_PASSWORD', default='postgres1')
 HOST = os.getenv('DB_HOST', default='db')
-PORT = os.getenv('DB_PORT', default='5431')
+PORT = os.getenv('DB_PORT', default='5432')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
