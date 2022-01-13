@@ -61,6 +61,9 @@ jobs:
             sudo docker pull polkando/yamdb_final:latest
             sudo docker-compose stop
             sudo docker-compose rm web
+            sudo docker-compose exec -T web python manage.py makemigrations --noinput
+            sudo docker-compose exec -T web python manage.py migrate --noinput 
+            sudo docker-compose exec -T web python manage.py collectstatic --no-input
             # Создаст файл для переменных окружения
             touch .env
             # Наполнит файл переменными окружения из секретов GitHub
